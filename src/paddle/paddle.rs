@@ -1,5 +1,7 @@
 use macroquad::{window::{screen_height}, prelude::{Color, DARKBLUE, Rect, KeyCode, is_key_down}, shapes::draw_rectangle};
 
+use crate::ball::RADIUS;
+
 pub const WIDTH:f32 = 20f32;
 pub const HEIGHT:f32 = 80f32;
 pub const COLOR:Color = DARKBLUE;
@@ -7,7 +9,7 @@ pub const SPEED:f32 = 10f32;
 
 #[derive(Copy, Clone)]
 pub struct Paddle {
-    rect: Rect
+    pub rect: Rect
 }
 
 impl Paddle {
